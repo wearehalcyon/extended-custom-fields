@@ -10,7 +10,7 @@ function ecf_register_cpt_field_groups(){
         'ecf-fields',
         array(
             'labels'          => array(
-                'name'               => __( 'Field Groups', 'ecf' ),
+                'name'               => __( 'ECF Field Groups', 'ecf' ),
                 'menu_name'          => __( 'ECF', 'ecf' ),
                 'singular_name'      => __( 'Field Group', 'ecf' ),
                 'add_new'            => __( 'Add New', 'ecf' ),
@@ -28,7 +28,7 @@ function ecf_register_cpt_field_groups(){
             'show_in_menu'    => true,
             '_builtin'        => false,
             'capability_type' => 'post',
-            'supports'        => false,
+            'supports'        => array('title'),
             'rewrite'         => false,
             'query_var'       => false,
             'menu_position'   => 80,

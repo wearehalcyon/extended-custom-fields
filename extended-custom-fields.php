@@ -14,5 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Invalid request.' );
 }
 
-// Include Dash admin menu
-require "includes/admin/cpt/ecf-cpt.php";
+// Include plugin bones
+include "assets/assets.php";
+include "includes/admin/cpt/ecf-cpt.php";
+include "includes/admin/metaboxes/ecf-metaboxes.php";
