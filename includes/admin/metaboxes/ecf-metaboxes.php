@@ -17,7 +17,7 @@ function ecf_cpt_custom_meta_box_fields() {
     );
 }
 function ecf_cpt_meta_box_callback_fields($post){
-    wp_nonce_field('ecf_cpt_meta_box_nonce_fields', 'meta_box_nonce');
+    wp_nonce_field('ecf_cpt_meta_box_nonce_fields', 'meta_box_nonce_fields');
 
     $meta_value = get_post_meta($post->ID, '_ecf_cpt_fields', true);
 
@@ -37,7 +37,7 @@ function ecf_cpt_custom_meta_box_location() {
     );
 }
 function ecf_cpt_meta_box_callback_location($post) {
-    wp_nonce_field('ecf_cpt_meta_box_nonce_location', 'meta_box_nonce');
+    wp_nonce_field('ecf_cpt_meta_box_nonce_location', 'meta_box_nonce_location');
 
     $meta_value = get_post_meta($post->ID, '_ecf_cpt_location', true);
     $type = isset($meta_value['type']) ? $meta_value['type'] : '';
@@ -49,7 +49,7 @@ function ecf_cpt_meta_box_callback_location($post) {
 
 add_action('save_post', 'save_ecf_cpt_meta_box_data');
 function save_ecf_cpt_meta_box_data($post_id) {
-    if (!isset($_POST['meta_box_nonce']) || !wp_verify_nonce($_POST['meta_box_nonce'], 'ecf_cpt_meta_box_nonce_location')) {
+    if (!isset($_POST['meta_box_nonce_location']) || !wp_verify_nonce($_POST['meta_box_nonce_location'], 'ecf_cpt_meta_box_nonce_location')) {
         return $post_id;
     }
 
@@ -91,7 +91,7 @@ function ecf_cpt_custom_meta_box_settings() {
     );
 }
 function ecf_cpt_meta_box_callback_settings($post){
-    wp_nonce_field('ecf_cpt_meta_box_nonce_settings', 'meta_box_nonce');
+    wp_nonce_field('ecf_cpt_meta_box_nonce_settings', 'meta_box_nonce_settings');
 
     $meta_value = get_post_meta($post->ID, '_ecf_cpt_settings', true);
 
