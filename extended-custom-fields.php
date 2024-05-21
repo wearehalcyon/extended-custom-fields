@@ -14,3 +14,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Invalid request.' );
 }
 
+// Include Dash admin menu
+require "includes/admin-menu.php";
