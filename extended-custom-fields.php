@@ -6,6 +6,8 @@ Description: This plugin provide extended (advanced) custom fields to your WordP
 Author: Roman A
 Version: 0.0.5
 Author URI: mailto:thewitness45@gmail.com
+Requires PHP: 7.4
+Requires at least: 5.8
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
