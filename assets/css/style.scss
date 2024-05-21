@@ -4,3 +4,60 @@
 .hide{
     display: none;
 }
+
+.add-field-container{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ecf-cpt-table{
+    position: relative;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    margin-top: 12px;
+    thead{
+        position: relative;
+        background-color: #ebebeb;
+        border: none;
+        tr{
+            border: none;
+            th{
+                padding: 10px;
+                border: none;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                width: 33.3333%;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                background-color: #fff;
+                input,
+                select{
+                    width: 100%;
+                }
+                input[type="checkbox"]{
+                    width: auto;
+                }
+                &.ecf-cpt-field-actions{
+                    width: 150px;
+                }
+                .delete{
+                    color: #b32d2e;
+                }
+            }
+            &:last-child{
+                td{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

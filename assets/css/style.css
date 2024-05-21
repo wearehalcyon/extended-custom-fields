@@ -1,3 +1,54 @@
 .hide {
   display: none;
+}
+
+.add-field-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ecf-cpt-table {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-spacing: 0;
+  margin-top: 12px;
+}
+.ecf-cpt-table thead {
+  position: relative;
+  background-color: #ebebeb;
+  border: none;
+}
+.ecf-cpt-table thead tr {
+  border: none;
+}
+.ecf-cpt-table thead tr th {
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+.ecf-cpt-table tbody tr td {
+  width: 33.3333%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.ecf-cpt-table tbody tr td input,
+.ecf-cpt-table tbody tr td select {
+  width: 100%;
+}
+.ecf-cpt-table tbody tr td input[type=checkbox] {
+  width: auto;
+}
+.ecf-cpt-table tbody tr td.ecf-cpt-field-actions {
+  width: 150px;
+}
+.ecf-cpt-table tbody tr td .delete {
+  color: #b32d2e;
+}
+.ecf-cpt-table tbody tr:last-child td {
+  border-bottom: none;
 }/*# sourceMappingURL=style.css.map */
