@@ -21,7 +21,7 @@
                 </select>
             </td>
             <td>
-                <select id="ecf_field_location" class="ecf_select_dynamic post_types" name="ecf_field_location" style="width:100%;">
+                <select id="ecf_field_location_type" class="ecf_select_dynamic post_types" name="ecf_field_location" style="width:100%;">
                     <?php foreach (get_post_types() as $cpt) : ?>
                         <?php if (
                             $cpt != 'attachment' &&
@@ -46,7 +46,7 @@
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </select>
-                <select id="ecf_field_location" class="ecf_select_dynamic post_taxonomies hide" name="ecf_field_location" style="width:100%;">
+                <select id="ecf_field_location_taxonomy" class="ecf_select_dynamic post_taxonomies hide" name="ecf_field_location" style="width:100%;">
                     <?php foreach (get_taxonomies() as $tax) : ?>
                         <?php if (
                             $tax != 'post_tag' &&
