@@ -15,4 +15,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Include Dash admin menu
-require "includes/admin-menu.php";
+require "includes/admin/cpt/ecf-cpt.php";
